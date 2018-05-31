@@ -43,7 +43,7 @@ class AppKernel extends Kernel
 ### Step 3: Add parameters
 Make sure you've setup the following parameters in your project's `parameters.yml`:  
 
-```
+```yaml
 polr_api_url
 polr_api_key
 polr_api_quota
@@ -51,12 +51,12 @@ polr_api_quota
 
 and your `config.yml` has:
 
-```
+```yaml
 # Polr API bundle
 polr_api:
       api_url: '%polr_api_url%'
       api_key: '%polr_api_key%'      
-      api_quota: '%polr_api_quota%'      
+      api_quota: '%polr_api_quota%'  # set 0 for unlimited
 ``` 
 
 ## Usage
