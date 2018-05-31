@@ -24,7 +24,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('api_url')->cannotBeEmpty()->end()
                 ->scalarNode('api_key')->cannotBeEmpty()->end()
-                ->integerNode('api_quota')->cannotBeEmpty()->end()
+                ->integerNode('api_quota')->min(0)->end()
             ->end()
         ;
 
