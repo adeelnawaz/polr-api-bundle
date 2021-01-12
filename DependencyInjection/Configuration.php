@@ -17,8 +17,18 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('polr_api');
+        // Most recent versions of TreeBuilder have a constructor
+        if (\method_exists(TreeBuilder::class, '__construct')) {
+            $treeBuilder = new TreeBuilder('polr_api');
+        } else { // which is not the case for older versions
+            $treeBuilder = new TreeBuilder;
+        }
+
+        if (method_exists($treeBuilder, 'root')) {
+            $rootNode = $treeBuilder->root('polr_api');
+        } else {
+            $rootNode = $treeBuilder->getRootNode();
+        }
 
         $rootNode
             ->children()

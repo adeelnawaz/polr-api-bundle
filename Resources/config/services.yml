@@ -1,8 +1,7 @@
 services:
-    polr_api.api_service:
-        class: Adeelnawaz\PolrApiBundle\Service\PolrApiService
-        arguments:
-          - '%polr_api.api_url%'
-          - '%polr_api.api_key%'
-          - '%polr_api.api_quota%'
-          - '@jms_serializer.serializer'
+  Adeelnawaz\PolrApiBundle\Service\PolrApiService:
+    class: Adeelnawaz\PolrApiBundle\Service\PolrApiService
+    arguments:
+      - '%polr_api.api_url%'
+      - '%polr_api.api_key%'
+      - '%polr_api.api_quota%'
