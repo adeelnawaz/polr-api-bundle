@@ -1,6 +1,6 @@
 # Polr API Bundle
 
-_(__Note:__ This version is not compatible with Symfony 3. Please use [older version](/releases/tag/0.1.1) for apps
+_(__Note:__ This version is not compatible with Symfony 3. Please use version [0.1.1](https://github.com/adeelnawaz/polr-api-bundle/releases/tag/0.1.1) for apps
 running on Symfony 3)_
 
 This bundle provides Polr API Client integration in Symfony (4|5). This bundle is simply a wrapper over PHP package
