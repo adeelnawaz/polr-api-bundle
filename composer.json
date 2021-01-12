@@ -10,9 +10,8 @@
     }
   ],
   "require": {
-    "symfony/symfony": "~3.0",
-    "adeelnawaz/polr-api-client": "~0.1",
-    "jms/serializer-bundle": "~1.5"
+    "symfony/framework-bundle": "^4.4||^5.1",
+    "adeelnawaz/polr-api-client": "1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "7.*"
